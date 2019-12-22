@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onResponse(JSONObject response) {
 
-                                loginResponse = new Gson().fromJson(response.toString(), LoginResponse.class);
+                                loginResponse = new Gson().fromJson(response.toString(),LoginResponse.class);
 
                                 tableList =  loginResponse.getTable();
 
